@@ -7,8 +7,8 @@ import { ConfigService } from '../configuration/config.service';
 import { map } from 'rxjs/operators';
 
 
-//const baseUrl = 'https://soniatback.herokuapp.com/api/v1';
-const baseUrl = 'http://localhost:8080/api/v1';
+const baseUrl = 'https://soniatback.herokuapp.com/api/v1';
+//const baseUrl = 'http://localhost:8080/api/v1';
 
 let headers: any;
 
