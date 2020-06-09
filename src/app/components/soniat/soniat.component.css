@@ -87,53 +87,53 @@
     height: 50%;
     padding-top: 65%;
 }
-  @media only screen and (min-device-width: 320px) 
-  and (max-device-width: 340px) 
-  and (-webkit-min-device-pixel-ratio: 2){
-    #chatbotarea{
-      grid-template-columns: 1fr ;
-      grid-template-rows: 1fr ;
-      grid-template-areas:"chatarea";
-    }
-    #footer{
-      padding: 5px !important;
-      top: 50% !important;
-    }
-    #btn{
-        color: #006595;
-        padding-left: 10px;
-        background: transparent;
-        border: 0;
-    }
-    #chatbot{   
-        width: 75%;
-        height: 95%;
-    }
+@media only screen and (min-device-width: 320px) 
+and (max-device-width: 340px) 
+and (-webkit-min-device-pixel-ratio: 2){
+  #chatbotarea{
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr ;
+    grid-template-areas:"chatarea";
   }
-  @media only screen and (min-device-width: 350px) 
-  and (max-device-width: 370px) 
-  and (-webkit-min-device-pixel-ratio: 2){
-    #chatbotarea{
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas:"chatarea";
-    }
-    #chatbot{   
-        width: 75%;
-        height: 95%;
-    }
-    #footer{
-      padding: 5px !important;
-      top: 70% !important;
-    }
-    #btn{
-        color: #006595;
-        padding-left: 20px;
-        background: transparent;
-        border: 0;
-    }
+  #footer{
+    padding: 5px !important;
+    top: 50% !important;
   }
-  @media only screen and (min-device-width: 375px) 
+  #btn{
+      color: #006595;
+      padding-left: 10px;
+      background: transparent;
+      border: 0;
+  }
+  #chatbot{   
+      width: 75%;
+      height: 95%;
+  }
+}
+@media only screen and (min-device-width: 350px) 
+and (max-device-width: 370px) 
+and (-webkit-min-device-pixel-ratio: 2){
+  #chatbotarea{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:"chatarea";
+  }
+  #chatbot{   
+      width: 75%;
+      height: 95%;
+  }
+  #footer{
+    padding: 5px !important;
+    top: 70% !important;
+  }
+  #btn{
+      color: #006595;
+      padding-left: 20px;
+      background: transparent;
+      border: 0;
+  }
+}
+@media only screen and (min-device-width: 375px) 
 and (max-device-width: 667px) 
 and (-webkit-min-device-pixel-ratio: 2){
   #chatbotarea{
@@ -150,16 +150,16 @@ and (-webkit-min-device-pixel-ratio: 2){
     padding-left: 20px;
     background: transparent;
     border: 0;
-}  
+  }  
 }
 @media only screen and (max-device-width: 700px){
-    #chatbotarea{
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas:"chatarea";
+  #chatbotarea{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:"chatarea";
+  }
+  #footer{
+      padding: 5px;
+      top: 67%;
     }
-    #footer{
-        padding: 5px;
-        top: 67%;
-      }
 }

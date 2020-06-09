@@ -19,8 +19,6 @@ export class SoniatComponent implements OnInit, AfterViewInit, AfterViewChecked 
   @ViewChild('box', {static: false}) box: ElementRef;
   @ViewChild('input',{static: false}) input: ElementRef;
 
-
-
   soniatForm: FormGroup;
   messages: Message[] = [];
   mostrar: boolean = false;
@@ -33,17 +31,14 @@ export class SoniatComponent implements OnInit, AfterViewInit, AfterViewChecked 
     })
     this.saveMessage("Hola me llamo SONIAT y seré tu asesor tecnológico durante la consulta, por favor coméntame ¿De que país nos escribes?",false)
   }
-
   ngAfterViewInit(){
     this.scrollToBottom();
     this.chatElement.nativeElement.focus()
   }
-
   ngAfterViewChecked(){
     this.scrollToBottom();
     this.chatElement.nativeElement.focus()
   }
-
   scrollToBottom(): void{
     try{
       this.box.nativeElement.scrollTop = this.box.nativeElement.scrollHeight;
@@ -51,11 +46,9 @@ export class SoniatComponent implements OnInit, AfterViewInit, AfterViewChecked 
       console.log(err)
     }
   }
-
   reset() {
     this.input.nativeElement.value = '';
   }
-
   onSubmit() {
     const question = this.soniatForm.controls.message.value;
     if (question != null) {
@@ -70,7 +63,6 @@ export class SoniatComponent implements OnInit, AfterViewInit, AfterViewChecked 
       });
     }
   }
-
   saveMessage(question: String, userMessage: boolean): void {
     this.messages.push({
       userMessage: userMessage,

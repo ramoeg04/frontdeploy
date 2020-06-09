@@ -1,11 +1,7 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-
-import { retry, catchError } from 'rxjs/operators';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { ConfigService } from '../configuration/config.service';
-import { map } from 'rxjs/operators';
-
 
 const baseUrl = 'https://soniatback.herokuapp.com/api/v1';
 //const baseUrl = 'http://localhost:8080/api/v1';
